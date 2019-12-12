@@ -12,12 +12,16 @@ struct ContentView: View {
     @State private var randomJoke: String = ""
     @State private var specificJoke: String = ""
     @State private var randomJokeID: Int = 0
-    @State private var specificJokeID: Int = 0
+    @State private var specificJokeID: Int = 42
     @State private var jokeCount: Int = 1
 
     var body: some View {
         TabView {
             VStack {
+                Image("cn")
+                    .resizable()
+                    .frame(width: 130, height: 130)
+                    .padding(.top, 50)
                 Spacer()
                 HStack {
                     Spacer()
